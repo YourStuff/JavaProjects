@@ -9,20 +9,25 @@ public class ImprovedGuess {
 		
 		Scanner bob = new Scanner(System.in);
 		int answer = (int)(10.0 * Math.random());
+		System.out.println(answer);
 		
 		for(int i =0; i < 3; i++){
 			
 			System.out.println("Please guess a number between 1 and 10 : ");
 			guess = bob.nextDouble();
 			
-			if (guess>10){
+			while (guess>10)
+			{
 				System.out.println("This number is out of range please guess between 1 and 10");
+				System.out.println("Please guess a number between 1 and 10 : ");
+				guess = bob.nextDouble();
 			}
 			
 			
 				
 			 if  (guess == answer) {
 			     System.out.println("RIGHT!");
+			     i=4;
 	          }    
 			else if ((answer == guess + 1) || (answer == guess - 1)) {
 					

@@ -11,7 +11,7 @@ public class createTree {
 		 int j = 0;
          int lenght = 10;
          
-        
+         System.out.println("Build your tree, enter a number: ");
          Scanner input = new Scanner(System.in);
          lenght = input.nextInt();
 		    while (i < lenght) {
